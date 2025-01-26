@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/1995b21022.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <nav>
+      <div class="left"> <span class="a">A</span>uranzeb's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#Project">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <main>
+    <section class="firstSection">
+      <div class="leftSection">
+        Hi, my name is <span class="purple"> Auranzeb Ansari</span>
+        <div> and I am a passionate</div>
+        <span id="element"></span>
+        <div class="buttons">
+          <a href="CV.jpg" download><button class="btn">Download CV</button></a>
+          <a href=""><button class="btn">About More</button></a>
+        </div>
+      </div>
+      <div class="rightSection">
+        <img src="photo1.jpg" alt="">
+      </div>
+    </section>
+  </main>
+
+
+  <script src="script.js"></script>
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer.', '&amp; AI Engineer.'],
+      typeSpeed: 90,
+    });
+  </script>
+
+<!-- ..................About............. -->
+ <section class="A">
+  <div id="About">
+    <div class="container ">
+      <div class="row">
+        <div class="about-col-1">
+          <img class="i" src="photo2.jpg" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            I am Auranzeb Ansari, a passionate learner with a deep interest in technology and innovation. As a Retail
+            Support L1 associate at Classic Tech, I’ve gained valuable experience in client handling and problem
+            resolution. Committed to growth, I’ve earned certifications in time management and financial literacy
+            through Chautari Youth Club workshops. I thrive in collaborative settings, as shown by my participation in
+            The Readers Meet 2081, and enjoy exploring new technologies to create meaningful societal impact.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick = "opentab('skills')">Skills</p>
+            <p class="tab-links" onclick = "opentab ('education')">Education</p>
+            <p class="tab-links" onclick = "opentab ('experience')">Experience</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Web </span> Designing
+              </li>
+              <li>
+                Zimbra, Nigios, Elastic
+              </li>
+              <li>
+                Hardware Maintenance
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2080 </span>
+                Diploma in Computer <br> Engineering (Completed)
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>14 Months </span>
+                Experience as a Retail Support L1 <br> Associate at Classic Tech
+              </li>
+              <li><span>6 Months </span>
+                Internship at Sharma Electronics <br>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ...............Services........... -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>Web design involves creating visually appealing, user-friendly websites that balance aesthetics, functionality, and responsive layouts.</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+          <h2>UI/UX Design</h2>
+            <p>UI/UX design focuses on enhancing user experience and interface usability through intuitive, aesthetically pleasing digital interactions.</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+          <h2>App Design</h2>
+            <p>App design involves crafting user-friendly, visually appealing interfaces for seamless navigation and functionality on mobile or desktop applications.</p>
+            <a href="#">Learn More</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+<!--............... Projects.................-->
+<section>
+<div id="Project">
+  <div class="container">
+    <h1 class="sub-title P">My Projects</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="photo6.png" alt="">
+       <div class="layer">
+        <h3>Social Media App</h3>
+        <p>The app connects you to the talented <br> people around the world.
+          Download <br> it form play store.
+        </p>
+        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+       </div>
+      </div>
+
+      <div class="work">
+        <img src="photo7.png" alt="">
+        <div class="layer">
+          <h3>Music App</h3>
+          <p>The app connects you to the talented <br> people around the world.
+            Download <br> it form play store.
+          </p>
+          <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+         </div>
+      </div>
+
+      <div class="work">
+        <img src="photo8.png" alt="">
+        <div class="layer">
+          <h3> Online Shopping App</h3>
+          <p>The app connects you to the talented <br> people around the world.
+            Download <br> it form play store.
+          </p>
+          <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+         </div>
+      </div>
+    </div>
+    <a href="#" class="Button1">See more</a>
+  </div>
+</div>
+</section>
+
+<!-- ......................contact.................. -->
+<footer>
+<div id="contact">
+  <div class="container">
+    <div class="row">
+     <div class="contact-left">
+      <h1 class="contact-me">Contact Me</h1>
+      <p><i class="fa-solid fa-envelope"></i> auranzeba254gmail.com</p>
+      <p><i class="fa-sharp fa-solid fa-phone-volume"></i> 9801025774</p>
+      <div class="social-icons">
+        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/"><i class="fa-brands fa-square-twitter"></i></a>
+
+      </div>
+
+     </div>
+
+     <div class="contact-right">
+      <form name="submit-to-google-sheet">
+        <input type="text" name="Name" placeholder="Your Name" required> <br>
+        <input type="email" name="Email" placeholder="Your Email" required> <br>
+        <textarea name="Massage" rows="7" placeholder="Your Message"></textarea> <br>
+        <button type="submit" class="Button1 btn2">Submit</button>
+      </form>
+      <span id="msg"></span>
+     </div>
+    </div>
+  </div>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname){
+  for (tablink of tablinks){
+  tablink.classList.remove("active-link");
+  }
+  for (tabcontent of tabcontents){
+  tabcontent.classList.remove("active-tab");
+  }
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+
+
+<script>
+  const scriptURL = ' https://script.google.com/macros/s/AKfycbwTSxCMkZ8FikCJFKdjaJL-bQBVAQzaWYLZtOrIeO5la70FFNQ6Ubkje5qGULoBGfwe/exec '
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML =""
+        },4000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>

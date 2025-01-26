@@ -1,0 +1,430 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(1, 1, 23);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.a{
+    width: 100px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(13, 13, 53);
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+nav ul li a:hover{
+    color: rgb(125, 181, 240);
+    font-size: 1.1rem;
+}
+
+.left{
+    font-size: 1.7rem;
+}
+
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+}
+
+.firstSection > div{
+    width: 30%;
+}
+
+.leftSection{
+    font-size: 2rem;
+    margin: 70px 0;
+}
+
+.leftSection .buttons{
+    padding: 40px 0;
+}
+
+.leftSection  .btn{
+    padding: 11px;
+    background-color: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.rightSection img{
+    width: 110%;
+    border: 2px solid ;
+    border-radius: 10px;
+    box-shadow: 3px 3px ;
+
+}
+
+.purple{
+    color: rgb(86, 86, 211);
+}
+
+#element{
+    color: rgb(86, 86, 211);
+}
+
+/* ..........About.......... */
+.A{
+    background-color: rgb(13, 13, 53);
+}
+
+#About{
+    color: #ababab;
+}
+
+.i{
+    width: 400px;
+    border: 2px solid ;
+    border-radius: 10px;
+    box-shadow: 3px 3px ;
+    margin: 0 10px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 30%;
+}
+
+.about-col-2{
+    flex-basis: 47%;
+    padding-right: 200px;
+}
+
+.sub-title{
+    font-size: 35px;
+    font-weight: 350;
+    color: #fff;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 25px 0 40px;
+}
+
+.tab-links{
+    margin-right:70px;
+    font-size: 17px;
+    font-weight: 400;
+    position: relative;
+    cursor: pointer;
+    color: white;
+
+}
+
+.a{
+    color: #ff004f;
+    font-size:35px;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+    color: white;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px  0;
+}
+
+.tab-contents ul li span{
+    color: #ff004f;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* .............Services........... */
+
+#services{
+    padding: 110px 110px;
+}
+
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+
+}
+
+.services-list div:hover {
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+
+
+/* ......................Projects.............. */
+
+
+
+#project{
+    padding: 50px 0;
+
+}
+
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.P{
+    margin-left: 108px;
+}
+
+.work{
+    
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img{
+    margin-left: 100px;
+    margin: auto;
+    width: 350px;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 74%;
+    height: 0%;
+    margin-left: 63px;
+    background: linear-gradient(rgba(0,0,0,0.5), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/* .work:hover img{
+    /* transform: scale(1.9);
+    } */
+
+.work:hover .layer{
+    height: 100%;
+}
+
+.Button1{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.7s;
+}
+
+.Button1:hover{
+    background: #ff0051cf;
+}
+
+/* ...............contact............. */
+
+footer{
+    margin-top: 50px;
+}
+
+.contact-left{
+    flex-basis: 20%;
+}
+
+.contact-right{
+    flex-basis:40%;
+}
+
+.contact-left p{
+    margin-top: 20px;
+}
+
+.social-icons{
+    margin-top: 20px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #ff0051cf;
+    transform: translateY(-5px);
+}
+
+.Button1.btn2{
+    background: rgba(0, 128, 0, 0.447);
+    margin-left: 17px;
+    margin-top: 10px;
+    border: 1px solid ;
+    padding: 14px 50px;
+    border-radius: 6px;
+    color: white;
+    transition: background 0.8s;
+    display: inline-block;
+}
+
+.btn2:hover{
+    background: #ff005199;
+}
+
+.contact-me{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn2{
+    cursor: pointer;
+}
+
+#msg{
+    color: green;
+    margin-top: -40px;
+    display: block;
+    margin-left: 17px;
+
+}
+
+/* ............Responsive........ */
+
+@media only screen and (max-width: 600px){
+    .header-text{
+        margin-top: 100%;
+        font-family: 15px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+}
